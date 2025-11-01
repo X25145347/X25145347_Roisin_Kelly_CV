@@ -71,6 +71,11 @@ h2{
 	.desc{
 		display:none;
 	}
+	#skillsList {
+		columns: 1;
+		-webkit-columns: 1; /* For Safari and Chrome */
+		-moz-columns: 1; /* For Firefox */
+	}
 }
 
 .subheader1{
