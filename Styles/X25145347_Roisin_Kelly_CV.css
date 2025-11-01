@@ -3,7 +3,12 @@ body{
 	color: #3A025B;
 }
 h2{
-	text-align: center;
+	color: #3A025B;
+}
+
+.header {
+	background: #3A025B;
+    color: #d3d3d3;
 }
 
 .fab, .fas {
@@ -13,6 +18,7 @@ h2{
   text-decoration: none;
   border-radius: 45%;
 }
+
 
 .fab:hover, .fas:hover {
     opacity: 0.7;
@@ -24,61 +30,54 @@ h2{
     color: #C8A2C8;
     transition: color 0.3s ease;
 }
-.header {
-	background: #3A025B;
-    color: #C8A2C8;
-}
+
 @media(min-width:700px){
-  .flexboxcss,  .flexbox{
-    display: flex;
-    margin: 10px;
-	justify-content: space-between;
-  }
+	#header{
+		font-size:4em;
+		text-align: left;
+	}
+	.subheader1{
+		font-size:1.5em;
+	}
+	.desc{
+		text-align: justify;
+		flex: 4;
+		margin: 5px;
+	}
+	#skillsList {
+		columns: 3;
+		-webkit-columns: 3; /* For Safari and Chrome */
+		-moz-columns: 3; /* For Firefox */
+	}
 }
 
 @media(max-width:699px){
-  .flexboxcss {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .flexbox {
-    display: flex;
-	flex-wrap: wrap;
-  }
+	#header{
+		font-size:2em;
+		text-align: left;
+	}
+	#headerName{
+		display:none;
+	}
+	.subheader1{
+		display:none;
+	}
+	p{
+		text-align: justify;
+	}
+	.grade{
+		display:none;
+	}
+	.desc{
+		display:none;
+	}
 }
 
-.flexbox-container{
-	width:32%;
-	padding: 5px;
-	margin: 5px;
-}
-#header{
-	font-size:4em;
-	margin: 20px;
-	text-align:center;
-}
-.subheader{
-	font-size:1.5em;
-	margin-top: 55px;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-bottom: 20px;
-	text-align: left;
-}
 .subheader1{
-	font-size:1.5em;
-	margin-top: 20px;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-bottom: 20px;
-	text-align: left;
+	margin-top: 10px;
+	text-align: right;
 }
-.desc{
-	text-align: justify;
-	flex: 4;
-	margin: 5px;
-}
+
 .role{
 	text-align: left;
 }
@@ -86,24 +85,21 @@ h2{
 	text-align: right;
 }
 .dates, .role{
-	flex: 1;
 	margin: 5px;
 	padding: 5px;
 }
 
-.company, .college{
+.org{
 	text-align: left;
 		margin: 5px;
 		padding: 5px;
 }
 #experience, #education, #skills{
 	border: 2px solid #3A025B;
+	background: #d3d3d3;
+    color: #3A025B;
 }
-#skillsList {
-columns: 3;
--webkit-columns: 3; /* For Safari and Chrome */
--moz-columns: 3; /* For Firefox */
-}
+
 a {
     text-decoration: none;
     color: #C8A2C8;
@@ -113,7 +109,13 @@ a:hover, a:active{
     text-decoration: overline underline;
 }
 .currentPage{
-    color: white;
 	text-decoration: underline;
 }
+#coverletter{
+	padding: 10px;
+}
+.accordion-button{
+	background-color:#C8A2C8;
+}
+
 
